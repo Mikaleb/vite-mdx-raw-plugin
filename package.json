@@ -1,0 +1,35 @@
+{
+  "name": "vite-plugin-mdx-raw",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vite-plugin",
+    "mdx",
+    "raw"
+  ],
+  "dependencies": {
+    "vite": "^4.0.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
