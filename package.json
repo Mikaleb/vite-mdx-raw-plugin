@@ -1,7 +1,14 @@
 {
   "name": "vite-plugin-mdx-raw",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "A vite plugin for getting mdx file into raw string",
+  "author": "Mikaleb",
   "type": "module",
+  "repository": "Mikaleb/vite-plugin-mdx-raw",
+  "bugs": "https://github.com/Mikaleb/vite-plugin-mdx-raw/issues",
+  "homepage": "https://github.com/Mikaleb/vite-plugin-mdx-raw#readme",
+  "funding": "https://github.com/sponsors/Mikaleb",
+  "exports": "./dist/index.js",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -24,9 +31,7 @@
     "tsup": "^6.7.0",
     "typescript": "^5.0.0"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "license": "MIT",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
