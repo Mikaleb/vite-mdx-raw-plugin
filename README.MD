@@ -11,7 +11,7 @@ This plugin allows you to use MDX (Markdown with JSX) in your Vite project, and 
 <p align="center">
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-![NPM Downloads](https://img.shields.io/npm/dw/vite-plugin-mdx-raw)
+![NPM Downloads](https://img.shields.io/npm/dw/vite-mdx-raw-plugin)
 
 </p>
 
@@ -20,8 +20,34 @@ This plugin allows you to use MDX (Markdown with JSX) in your Vite project, and 
 To install the plugin, run:
 
 ```bash
-npm install vite-plugin-mdx-raw --save-dev
+npm install vite-mdx-raw-plugin --save-dev
+yarn add vite-mdx-raw-plugin -d
 ```
+
+## Usage
+
+You can load it in your vite configuration like so :
+
+```ts
+// https://vitejs.dev/config/
+
+import viteMdxRawPlugin from 'vite-mdx-raw-plugin'
+
+export default defineConfig({
+  plugins: [
+    // vue(), example
+    viteMdxRawPlugin(),
+    // etc you can add more plugin
+  ],
+```
+
+Then you can import your vue file like you would do with any string :
+
+```ts
+const mdFile = await import(`content.mdx`);
+```
+
+And after use any mdx parser you would like, I recommend [@nuxtjs/mdc](https://github.com/nuxt-modules/mdc) but you can go ahead and use another or build your own !
 
 ## Contributing
 
